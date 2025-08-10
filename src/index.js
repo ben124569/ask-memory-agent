@@ -222,7 +222,7 @@ Provide a helpful, conversational response. If no relevant memories were found, 
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: env.OPENAI_MODEL || 'gpt-4o',
+        model: env.OPENAI_MODEL || 'gpt-5',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 500,
         temperature: 0.7,
